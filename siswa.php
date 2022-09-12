@@ -31,8 +31,8 @@
 <body class="selection:bg-slate-600 selection:text-white">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
+  <header id="header" class="fixed-top d-flex align-items-center shadow-sm ">
+    <div class="container d-flex align-items-center ">
       
       <!--<navbrand class="logo me-auto relative"><a href="index.html"><img src="assets/img/icon.png" alt=""></a>
         <h3 class="pl-3 ">Software Engginering</h3>
@@ -76,11 +76,11 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs max-w-full h-auto"style="background-image: url(assets/img/prestasi.png);  background-size: 100% 100%;">
+    <section id="breadcrumbs" class="breadcrumbs max-w-full h-auto"style="background-image: url(assets/img/batik.png);  background-size: 100% 100%;">
       <div class="container bg-fixed"  >
 
         <div class="d-flex justify-content-between items-center mb-11">
-          <h2 class="px-3 mt-4 text-slate-100">Siswa</h2>
+          <h2 class="px-3 mt-4 text-slate-900">Siswa</h2>
           <ol class="bg-slate-100 rounded px-3 py-3 absolute right-6 mt-9">
             <li><a href="index.html" class="text-red-800">Home</a></li>
             <li>Siswa</li>
@@ -107,7 +107,7 @@ if(isset($_GET['cari'])){
     <div class="container my-5">
     <table class="table table-auto align-middle mb-0 bg-white">
  <thead class="bg-light">
-  <tr>
+  <tr class="font-sans">
     <th></th>
     <th>NIS</th>
     <TH>Nama</TH>
@@ -138,7 +138,7 @@ if(isset($_GET['cari'])){
  {
     ?>
 </tbody>
-    <tr class=" hover:bg-gray-200">
+    <tr class=" hover:bg-gray-200 font-sans">
     <td><img src="assets/img/icon.png" alt="" width="80px" class="rounded ml-2"></td>
       <td><?php echo  $row['NIS'];?></td>
       <td><?php echo  $row['name'];?></td>

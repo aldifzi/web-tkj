@@ -30,7 +30,7 @@ include('assets/includes/config.php');
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
+  <body class="selection:bg-slate-600 selection:text-white">
 
     <!-- Navigation -->
   <!-- ======= Header ======= -->
