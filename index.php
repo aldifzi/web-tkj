@@ -343,7 +343,7 @@ include('assets/includes/config.php');
       </div>
     </div>
 </div>
-<button class="button-62 mt-3 ml-28">Lebih Banyak
+<button class="btn btn-blue bg-white hover:bg-white text-red-800 font-bold py-1 px-4 left-5  hover:text-yellow-400 cursor-pointer   mt-3 ml-28">Lebih Banyak
           <a href="about.html"></a>
         </button>
 </section>
