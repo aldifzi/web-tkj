@@ -138,7 +138,7 @@ if(isset($_GET['cari'])){
  {
     ?>
 </tbody>
-    <tr>
+    <tr class=" hover:bg-gray-200">
     <td><img src="assets/img/icon.png" alt="" width="80px" class="rounded ml-2"></td>
       <td><?php echo  $row['NIS'];?></td>
       <td><?php echo  $row['name'];?></td>
