@@ -80,7 +80,7 @@
       <div class="container bg-fixed"  >
 
         <div class="d-flex justify-content-between items-center mb-11">
-          <h2 class="px-3 mt-4 text-slate-900">Siswa</h2>
+          <h2 class="px-3 mt-4 text-slate-900">Daftar Siswa</h2>
           <ol class="bg-slate-100 rounded px-3 py-3 absolute right-6 mt-9">
             <li><a href="index.html" class="text-red-800">Home</a></li>
             <li>Siswa</li>
