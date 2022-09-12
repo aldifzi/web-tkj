@@ -80,7 +80,7 @@ include('includes/config.php');?>
 <html lang="en">
     <head>
 
-        <title> | Manage Cooments</title>
+        <title>Data Siswa</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
@@ -168,8 +168,8 @@ include('includes/config.php');?>
                     <br>
                     <div class="w-full md:w-1/2 px-3 py-4">
                         <label for="kelas" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Kelas</label>
-                        <div class="col-sm-10">
-                            <select class="bg-slate-400 rounded-full" name="kelas" id="kelas">
+                        <div class="col-sm-10 pointer">
+                            <select class="bg-slate-400 rounded-full " name="kelas" id="kelas">
                                 <option value="">- Pilih Kelas -</option>
                                 <option value="X TKJ 1" <?php if ($kelas == "X TKJ 1") echo "selected" ?>>X TKJ 1</option>
                                 <option value="X TKJ 2" <?php if ($kelas == "X TKJ 2") echo "selected" ?>>X TKJ 2</option>
@@ -193,7 +193,7 @@ include('includes/config.php');?>
                 Data Siswa
             </div>
             <div class="card-body ">
-                <table class="table-fixed">
+                <table class="table-fixed table-auto">
                     <thead>
                         <tr class="bg-slate-300 text-slate-80 border-x-2 ">
                             <th class="px-4 py-2">#</th>

@@ -35,7 +35,7 @@ echo "<script>alert('Invalid Details');</script>";
 
 
         <!-- App title -->
-        <title>News Portal | Admin Panel</title>
+        <title>Berita | Admin Panel</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -65,7 +65,7 @@ echo "<script>alert('Invalid Details');</script>";
                                 <div class="text-center account-logo-box">
                                     <h2 class="text-uppercase">
                                         <a href="index.html" class="text-success">
-                                            <span><img src="assets/images/logo.png" alt="" height="56"></span>
+                                            <span><img src="assets/images/logo.jpg" alt="" height="56"></span>
                                         </a>
                                     </h2>
                                     <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->

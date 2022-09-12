@@ -78,7 +78,7 @@ include('assets/includes/config.php');
 
 
 
-   <section id="breadcrumbs" class="breadcrumbs max-w-full  h-auto"style="background-image: url(assets/img/bread/breadcumb-berita.jpg); height: auto; width: 33cm; background-size: 100% 100%; max-width: 100%;" >
+   <section id="breadcrumbs" class="breadcrumbs max-w-full  h-auto"style="background-image: url(assets/img/bread/breadcumb-berita.jpg); height: auto; width: auto; background-size: 100% 100%; max-width: 100%;" >
       <div class="container bg-fixed"  >
 
         <div class="d-flex justify-content-between items-center mb-11">
