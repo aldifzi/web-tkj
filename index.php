@@ -64,9 +64,9 @@ include('assets/includes/config.php');
       
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index" class="active">Home</a></li>
+          <li><a href="index" class="active">Beranda</a></li>
 
-          <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about">About</a></li>
               <li><a href="guru">Guru</a></li>
@@ -76,10 +76,10 @@ include('assets/includes/config.php');
             </ul>
           </li>
           
-          <li><a href="portfolio.html">Galeri</a></li>
+          <li><a href="galeri">Galeri</a></li>
           <li><a href="berita">Berita</a></li>
 
-          <li><a href="contact.html">Prestasi</a></li>
+          <li><a href="contact">Prestasi</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -343,7 +343,7 @@ include('assets/includes/config.php');
       </div>
     </div>
 </div>
-<button class="btn btn-blue bg-white hover:bg-white text-red-800 font-bold py-1 px-4 left-5  hover:text-yellow-400 cursor-pointer   mt-3 ml-28">Lebih Banyak
+<button class="btn btn-blue bg-white hover:bg-white text-red-800 font-bold py-1 px-4 left-5  hover:text-yellow-500 cursor-pointer   mt-3 ml-28">Lebih Banyak
           <a href="about.html"></a>
         </button>
 </section>
@@ -429,7 +429,9 @@ while ($row=mysqli_fetch_array($query)) {
 
   
   <!-- ====== Footer Section Start -->
-<footer class="bg-white pt-20 lg:pt-[120px] pb-10 lg:pb-20 relative z-10">
+<footer class="bg-red-700 pt-5 lg:pt-[120px] sm:pt-[150px] pb-0 lg:pb-20 relative z-10">
+  <div class="bg-yellow-400 pt-4 lg:pt-[110px] pb-0 lg:pb-0 relative z-10">
+  <div class="bg-slate-800 pt-9 lg:pt-[120px] pb-5 lg:pb-20 relative z-10">
    <div class="container">
       <div class="flex flex-wrap -mx-4">
          <div class="w-full sm:w-2/3 lg:w-3/12 px-4">
@@ -444,17 +446,17 @@ while ($row=mysqli_fetch_array($query)) {
                   class="w-20"
                   />
                </a>
-               <p class="text-base text-body-color mb-7">
+               <p class="text-white text-body-color mb-7">
                Jl. Parangtritis No.KM.11, Dukuh, Sabdodadi, Kec. Bantul, Kabupaten Bantul
 Daerah Istimewa Yogyakarta 55715
                </p>
-               <p class="flex items-center text-sm text-dark font-medium">
+               <p class="flex items-center text-sm text-white font-medium">
                   <span class="text-primary mr-3">
                      <i class="fa-solid fa-phone"></i>
                   </span>
                   <span>+012 (345) 678 99</span>
                </p>
-               <p class="flex items-center mt-2 text-sm text-dark font-medium">
+               <p class="flex items-center mt-2 text-sm text-white font-medium">
                   <span class="text-primary mr-3">
                   <i class="fa-solid fa-envelope"></i>
                   </span>
@@ -465,15 +467,15 @@ Daerah Istimewa Yogyakarta 55715
         
          <div class="w-full sm:w-1/2 lg:w-2/12 px-4 ml-12">
             <div class="w-full mb-10">
-               <h4 class="text-dark text-lg font-semibold mb-9">Company</h4>
+               <h4 class="text-white text-lg font-semibold mb-9">Company</h4>
                <ul>
                   <li>
                      <a
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -486,8 +488,8 @@ Daerah Istimewa Yogyakarta 55715
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -500,8 +502,8 @@ Daerah Istimewa Yogyakarta 55715
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -514,8 +516,8 @@ Daerah Istimewa Yogyakarta 55715
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -528,15 +530,15 @@ Daerah Istimewa Yogyakarta 55715
          </div>
          <div class="w-full sm:w-1/2 lg:w-2/12 px-4 ml-8">
             <div class="w-full mb-10">
-               <h4 class="text-dark text-lg font-semibold mb-9">Quick Links</h4>
+               <h4 class="text-white text-lg font-semibold mb-9">Quick Links</h4>
                <ul>
                   <li>
                      <a
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -549,8 +551,8 @@ Daerah Istimewa Yogyakarta 55715
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -563,8 +565,8 @@ Daerah Istimewa Yogyakarta 55715
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -577,8 +579,8 @@ Daerah Istimewa Yogyakarta 55715
                         href="javascript:void(0)"
                         class="
                         inline-block
-                        text-base text-body-color
-                        hover:text-primary
+                        text-base text-white
+                        hover:text-red-800
                         leading-loose
                         mb-2
                         "
@@ -591,7 +593,7 @@ Daerah Istimewa Yogyakarta 55715
          </div>
          <div class="w-full sm:w-1/2 lg:w-3/12 px-4 ml-8">
             <div class="w-full mb-10">
-               <h4 class="text-dark text-lg font-semibold mb-9">Follow Us On</h4>
+               <h4 class="text-white text-lg font-semibold mb-9">Follow Us On</h4>
                <div class="flex items-center mb-6">
                   <a
                      href="javascript:void(0)"
@@ -603,7 +605,7 @@ Daerah Istimewa Yogyakarta 55715
                      justify-center
                      rounded-full
                      border border-[#E5E5E5]
-                     text-dark
+                     text-white
                      hover:text-white hover:bg-primary hover:border-primary
                      mr-3
                      sm:mr-4
@@ -632,7 +634,7 @@ Daerah Istimewa Yogyakarta 55715
                      justify-center
                      rounded-full
                      border border-[#E5E5E5]
-                     text-dark
+                     text-white
                      hover:text-white hover:bg-primary hover:border-primary
                      mr-3
                      sm:mr-4
@@ -661,7 +663,7 @@ Daerah Istimewa Yogyakarta 55715
                      justify-center
                      rounded-full
                      border border-[#E5E5E5]
-                     text-dark
+                     text-white
                      hover:text-white hover:bg-primary hover:border-primary
                      mr-3
                      sm:mr-4
@@ -690,7 +692,7 @@ Daerah Istimewa Yogyakarta 55715
                      justify-center
                      rounded-full
                      border border-[#E5E5E5]
-                     text-dark
+                     text-white
                      hover:text-white hover:bg-primary hover:border-primary
                      mr-3
                      sm:mr-4
@@ -770,6 +772,8 @@ Daerah Istimewa Yogyakarta 55715
             </defs>
          </svg>
       </span>
+   </div>
+   </div>
    </div>
 </footer>
 <!-- ====== Footer Section End --><!-- End Footer -->
