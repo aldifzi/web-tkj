@@ -64,20 +64,20 @@ include('assets/includes/config.php');
       
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index" class="active">Home</a></li>
 
           <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="guru.html">Guru</a></li>
-              <li><a href="siswa.php">Siswa</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="guru">Guru</a></li>
+              <li><a href="siswa">Siswa</a></li>
 
               
             </ul>
           </li>
           
           <li><a href="portfolio.html">Galeri</a></li>
-          <li><a href="berita.php">Berita</a></li>
+          <li><a href="berita">Berita</a></li>
 
           <li><a href="contact.html">Prestasi</a></li>
         </ul>
