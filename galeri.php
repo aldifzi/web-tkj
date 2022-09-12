@@ -60,22 +60,22 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li><a href="index" >Beranda</a></li>
 
           <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="about.html">Visi Misi</a></li>
-              <li><a href="guru.html">Guru</a></li>
-              <li><a href="siswa.php">Siswa</a></li>
+              <li><a href="about">Visi Misi</a></li>
+              <li><a href="guru">Guru</a></li>
+              <li><a href="siswa">Siswa</a></li>
 
               
             </ul>
           </li>
           
-          <li><a href="portfolio.html" class="active">Galeri</a></li>
-          <li><a href="blog.html">Berita</a></li>
+          <li><a href="galeri" class="active">Galeri</a></li>
+          <li><a href="blog">Berita</a></li>
 
-          <li><a href="contact.html">Prestasi</a></li>
+          <li><a href="contact">Prestasi</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
