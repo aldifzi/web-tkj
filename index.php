@@ -255,7 +255,7 @@ include('assets/includes/config.php');
     </section>
 <!-- End Fasilitas Section -->
 
-<section class="Daftarguru">
+<section class="Daftarguru bg-red-400">
 <div>
   <div class="section-title  text-center">
         <p >Daftar Guru</p>
@@ -349,8 +349,15 @@ include('assets/includes/config.php');
 
 
 <!-- Sekilas Berita Section -->
-<section>
-    <div class="">
+<section id="recent-blog-posts" class="recent-blog-posts bg-slate-100">
+   
+
+  
+    <!-- ======= Recent Blog Posts Section ======= -->
+<section >
+  <div class="container" data-aos="fade-up">
+
+ <div class="">
       <div class="section-title text-center">
         <p >Sekilas Berita</p>
         <h2></h2>
@@ -376,13 +383,6 @@ include('assets/includes/config.php');
 $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle,tblposts.PostImage,tblcategory.CategoryName as category,tblcategory.id as cid,postedBy,tblsubcategory.Subcategory as subcategory,tblposts.PostDetails as postdetails,tblposts.PostingDate as postingdate,tblposts.PostUrl as url from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId where tblposts.Is_Active=1 order by tblposts.id desc  LIMIT $offset, $no_of_records_per_page");
 while ($row=mysqli_fetch_array($query)) {
 ?>
-    <!-- ======= Recent Blog Posts Section ======= -->
-<section id="recent-blog-posts" class="recent-blog-posts bg-slate-100">
-  <div class="container" data-aos="fade-up">
-
-
-
- 
  
   <div class="row gy-5">
  

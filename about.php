@@ -122,11 +122,11 @@
               
               <div class="member-info ">
                 <h2 class="text-center ">Misi</h2>
+      
                 <ol>
-                  <li>uuu</li>
+                  <li></li>
                   <li></li>
                 </ol>
-                
               </div>
             </div>
           </div>
