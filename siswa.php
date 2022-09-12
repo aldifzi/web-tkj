@@ -93,7 +93,7 @@
     <!-- ======= Tabel ======= -->
 
     <form action="" method="get" class="form mt-4 ml-3">
- <input type="text" name="cari" placeholder="Cari Siswa..." class="bg-gray-100 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500">
+ <input type="text" name="cari" placeholder="Cari Siswa..." class="bg-gray-50 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500">
  <button class="button-62 ml-4">Cari</button>
 </form>
  
