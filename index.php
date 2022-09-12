@@ -257,11 +257,13 @@ include('assets/includes/config.php');
 
 <section class="Daftarguru bg-red-400">
 <div>
-  <div class="section-title  text-center">
-        <p >Daftar Guru</p>
+<div class="section-title1  text-center">
+  <p>Daftar Guru</p>
+  </div>
+  <div class="section-title1  text-center">
         <h2></h2>
   </div>
-  <div class="row">
+  <div class="row mt-4">
       <div class=" columns">
         <div class="owl-carousel owl-theme">
           <!-- component -->
@@ -349,7 +351,7 @@ include('assets/includes/config.php');
 
 
 <!-- Sekilas Berita Section -->
-<section id="recent-blog-posts" class="recent-blog-posts bg-slate-100">
+<section id="recent-blog-posts" class="recent-blog-posts">
    
 
   

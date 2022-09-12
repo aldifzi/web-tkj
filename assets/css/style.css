@@ -231,6 +231,10 @@ h6 {
   }
 }
 
+.Daftarguru {
+  background: rgb(125,5,5);
+background: linear-gradient(90deg, rgba(125,5,5,1) 0%, rgba(60,5,5,1) 51%, rgba(88,7,7,1) 100%);
+}
 /**
 * Mobile Navigation 
 */
@@ -548,16 +552,25 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #080505;
   font-family: "Poppins", sans-serif;
+}
+
+.section-title1 h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: #b5b800;
+  margin: 4px 10px;
 }
 
 .section-title h2::after {
   content: "";
   width: 120px;
-  height: 1px;
+  height: 2px;
   display: inline-block;
-  background: #e6636a;
+  background: #c21c1c;
   margin: 4px 10px;
 }
 
@@ -571,6 +584,15 @@ section {
   color: #556270;
 }
 
+.section-title1 p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -2244,6 +2266,7 @@ table {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
 }
+
 
 .recent-blog-posts .post-item .post-img img {
   transition: 0.5s;
