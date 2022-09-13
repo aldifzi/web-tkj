@@ -102,52 +102,86 @@
 
 
    <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="content-page">
-                <!-- Start content -->
-                <div class="content">
-                <div class="row">
-                    <li><a href="upload-photo.php" data-reveal-id="uploadModal" data-reveal-ajax="true">Add Photo</a></li>
-         <div class="large-12 columns">
-            <?php
-            if(isset($_GET['success'])) {
-            if($_GET['success']=="yes"){?>
-            <div class="row">
-               <div class="small-6 large-6 columns">
-                  <div data-alert class="alert-box success radius ">
-                     Image "<?= $_GET['title']; ?>" uploaded successfully.
-                     <a href="#" class="close">&times;</a>
-                  </div>
-               </div>
-            </div>
-            <?php } else {?>
-             <div class="row">
-               <div class="small-6 large-6 columns">
-                  <div data-alert class="alert-box alert radius ">
-                     There was a problem uploading the image.
-                     <a href="#" class="close">&times;</a>
-                  </div>
-               </div>
-            </div>
-            <?php } }?>
-            <div class="row">
-            <ul class="col-lg-3 col-md-3 col-sm-3 col-xs-6 d-flex" data-clearing>
-               <?php
-               require 'includes/dbc.php';
-               $stmt = $dbc->query("SELECT * FROM tbl_photos ORDER by img_id ASC");
-               foreach ($stmt as $img) {
-               ?>
-               <li>
-                  <a href="<?= $img['img_path']; ?>">
-                  <img data-caption="<?= $img['img_title']; ?>" src="<?= $img['img_path']; ?>" class="img-responsive"></a>
-               </li>
-               <?php } ?>
-            </ul>
-            </div>
-         </div>
-      </div>
 
-                </div> <!-- content -->
+   <div class="container">
+
+<h3 style="text-align: center; font-size: 35px;" ><i><b>PHP - Image Gallery CRUD Example</b></i></h3>
+
+<form action="./imageUpload.php" class="form-image-upload" method="POST" enctype="multipart/form-data">
+
+    <!-- code to show error message -->
+    <?php if (!empty($_SESSION['error'])) { ?>
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+            <ul>
+                <li><?php echo $_SESSION['error']; ?></li>
+            </ul>
+        </div>
+    <?php unset($_SESSION['error']);
+    } ?>
+
+    <!-- code to show success message  -->
+    <?php if (!empty($_SESSION['success'])) { ?>
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong><?php echo $_SESSION['success']; ?></strong>
+        </div>
+    <?php unset($_SESSION['success']);
+    } ?>
+
+    <div class="row">
+        <div class="col-md-5">
+            <strong>Title:</strong>
+            <input type="text" name="title" class="form-control" placeholder="Title">
+        </div>
+        <div class="col-md-5">
+            <strong>Image:</strong>
+            <input type="file" name="image" class="form-control">
+        </div>
+        <div class="col-md-2">
+            <br />
+            <button type="submit" class="btn btn-success">Upload</button>
+        </div>
+    </div>
+</form>
+
+
+<div class="row">
+    <div class='list-group gallery' style="width:100%;">
+        <?php
+        require('koneksi.php');
+
+        $sql = "SELECT * FROM image_gallery";
+        $images = $connection->query($sql);
+
+        while ($image = $images->fetch_assoc()) {
+
+        ?>
+            <div class='col-sm-3' style="float: left;">
+
+                <a class="thumbnail fancybox" rel="ligthbox" href="./uploads/<?php echo $image['image'] ?>">
+                
+                    <img alt="" src="./uploads/<?php echo $image['image'] ?>" />
+                    <div class='text-center'>
+                        <small class='text-muted'><?php echo $image['title'] ?></small>
+                    </div> <!-- text-center / end -->
+                </a>
+
+                <!-- form to delete image -->
+                <form action="./imageDelete.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $image['id'] ?>">
+                    <button type="submit" title="delete" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                </form>
+
+            </div> <!-- col-6 / end -->
+        <?php } ?>
+
+    </div> <!-- list-group / end -->
+</div> <!-- row / end -->
+</div>
+  
+      
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
