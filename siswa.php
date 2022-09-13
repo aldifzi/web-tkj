@@ -134,7 +134,37 @@ if(isset($_GET['cari'])){
   $query1 = mysqli_query($connection,"SELECT * FROM user");  
  }
    
-
+// menyimpan url halaman saat ini dengan fungsi get
+                    // misalnya kalian akan melihat ?halaman= 3 pada url di atas, maka 3 akan disimpan ke dalam var halaman
+                    $halaman        = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
+    
+                    // jika nilai halaman lebih besar dari 1 maka halaman awal adalah halaman dikali 10 - 10
+                    // jika nilai halaman lebih kecil dari 1 maka halaman awal adalah 0
+                    $halaman_awal   = ($halaman > 1) ? ($halaman * 10) - 10 : 0;
+    
+                    // membuat koneksi ke database
+                    $koneksi        = mysqli_connect("localhost", "root", "", "tkj");
+    
+                    // jika kembali dikurangi 1 dan jika setelahnya ditambah 1
+                    $sebelum        = $halaman - 1;
+                    $setelah        = $halaman + 1;
+    
+                    // mengambil data dari tabel pegawai untuk ditotal
+                    $datas           = mysqli_query($koneksi, "select * from user");
+    
+                    // jumlah data pegawai ditotal
+                    $jumlah_data    = mysqli_num_rows($datas);
+    
+                    // ceil adalah fungsi pembulatan pada php
+                    $total_halaman  = ceil($jumlah_data / 10);
+    
+                    // yang ini mengambil data pengawai untuk ditampilkan dengan fungsi limit
+                    // satu halaman akan ditampilkan paling banyak 10 atau limit 10
+                    $query1   = mysqli_query($koneksi, "select * from user limit $halaman_awal, 1");
+    
+                    // nomor digunakan untuk penomoran pada kolom no
+                    // karena index dimulai dari angka 0 maka perlu ditambah 1
+                    $nomor          = $halaman_awal + 1;
  
  while($row=mysqli_fetch_array($query1))
  {
