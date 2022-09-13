@@ -948,11 +948,12 @@ section {
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
-.team .member {
+.team #member {
   position: relative;
   padding: 50px;
   border-radius: 2px;
-  background: rgb(255, 255, 255);
+  background: rgb(204,204,204);
+background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(249,249,255,1) 55%, rgba(223,223,223,1) 84%);
   margin: 30px 10px;
 }
 

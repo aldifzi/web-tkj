@@ -105,8 +105,8 @@
 
         <div class="row">
 
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
+          <div class="col-lg-6 ">
+            <div class="member d-flex align-items-center left-72" id="member">
               <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4><?php echo $record['nama']; ?></h4>
