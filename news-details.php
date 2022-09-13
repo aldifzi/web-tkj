@@ -193,7 +193,7 @@ $pt=$row['postdetails'];
 
 
                   <div class="form-group mt-3">
-                    <textarea class="bg-white border-2 border-gray-400 rounded py-2 px-44 text-gray-700  focus:outline-none focus:bg-white focus:border-red-500" name="Komentar" rows="3" placeholder="Comment" required></textarea>
+                    <textarea type="Comment" class="bg-white border-2 border-gray-400 rounded py-2 px-44 text-gray-700  focus:outline-none focus:bg-white focus:border-red-500" name="Comment" rows="3" placeholder="Comment" required></textarea>
                   </div>
                   <button type="submit" class=" bg-red-500 mt-2 text-white font-bold py-1 px-4 rounded-full cursor-pointer hover:bg-red-900" name="submit">Kirim</button>
                 </form>
