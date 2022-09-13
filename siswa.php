@@ -134,6 +134,8 @@ if(isset($_GET['cari'])){
   $query1 = mysqli_query($connection,"SELECT * FROM user");  
  }
    
+
+ 
  while($row=mysqli_fetch_array($query1))
  {
     ?>
