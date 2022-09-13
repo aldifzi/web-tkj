@@ -93,7 +93,7 @@
   </section><!-- End Breadcrumbs -->
   <?php
 			include_once("koneksi.php");
-			$sql = "SELECT id, nama, alamay, nohp FROM guru";
+			$sql = "SELECT id, nama, alamay, nohp , pendidikan FROM guru";
 			$resultset = mysqli_query($connection, $sql) or die("database error:". mysqli_error($connection));			
 			while( $record = mysqli_fetch_assoc($resultset) ) {
 			?>
@@ -111,7 +111,9 @@
               <div class="member-info">
                 <h4><?php echo $record['nama']; ?></h4>
                 <span>Chief Executive Officer</span>
-                <p><?php echo $record['nohp']; ?></p>
+                <p><i class="fa-solid fa-phone mr-3"></i><?php echo $record['nohp']; ?></p>
+                <p><i class="fa-solid fa-map-location-dot mr-3"></i><?php echo $record['alamay']; ?></p>
+                <p><i class="fa-solid fa-building-columns mr-3"></i><?php echo $record['pendidikan']; ?></p>
                 <div class="social">
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
@@ -121,7 +123,7 @@
             </div>
           </div>
           <?php } ?>
-         
+
 
         
 
@@ -168,7 +170,7 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <script src="https://kit.fontawesome.com/6f2ba42180.js" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
