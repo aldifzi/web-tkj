@@ -93,7 +93,7 @@
     <!-- ======= Tabel ======= -->
 
     <form action="" method="get" class="form mt-4 ml-3">
- <input type="text" name="cari" placeholder="Cari Siswa..." class="bg-gray-50 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500">
+ <input type="text" name="cari" placeholder="Cari Siswa..." class="bg-gray-50 appearance-none border-2 border-gray-400 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500">
  <button class="button-62 ml-4">Cari</button>
 </form>
  
@@ -171,7 +171,7 @@ if(isset($_GET['cari'])){
     ?>
 </tbody>
     <tr class=" hover:bg-gray-200 font-sans">
-    <td><img src="assets/img/icon.png" alt="" width="80px" class="rounded ml-2"></td>
+    <td><img src="assets/img/icon.png" alt="" width="80px" class="rounded ml-2 tablet:w-10"></td>
       <td><?php echo  $row['NIS'];?></td>
       <td><?php echo  $row['name'];?></td>
       <td><?php echo  $row['kelas'];?></td>
@@ -185,17 +185,17 @@ if(isset($_GET['cari'])){
  <nav aria-label="Page navigation example">
                 <ul class="inline-flex -space-x-px pb-4 ml-5">
                     <li class="page-item">
-                        <a class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-red-400 hover:text-white " <?php if($halaman > 1){ echo "href='?halaman=$sebelum'"; } ?>>Previous</a>
+                        <a class="px-4 py-2 font-bold text-gray-500 bg-slate-100 rounded-md hover:bg-red-600 border-2 border-red-600 hover:text-white " <?php if($halaman > 1){ echo "href='?halaman=$sebelum'"; } ?>>Previous</a>
                     </li>
                     <?php 
                         for($x = 1; $x <= $total_halaman; $x++){
                     ?> 
-                    <li class="page-item"><a class="px-4 py-2 ml-1 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white" href="?halaman=<?php echo $x ?>"> <?php echo $x; ?></a></li>
+                    <li class="page-item"><a class="px-4 py-2 ml-1 text-gray-700 bg-gray-200 rounded-md hover:bg-red-400 hover:text-white" href="?halaman=<?php echo $x ?>"> <?php echo $x; ?></a></li>
                     <?php
                         }
                     ?> 
                     <li class="page-item">
-                        <a  class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-red-400 hover:text-white " <?php  if($halaman < $total_halaman) { echo "href='?halaman=$setelah'"; } ?>>Next</a>
+                        <a  class="px-4 py-2 font-bold text-gray-500 bg-slate-100 rounded-md hover:bg-red-600 border-2 border-red-600 hover:text-white " <?php  if($halaman < $total_halaman) { echo "href='?halaman=$setelah'"; } ?>>Next</a>
                     </li>
                 </ul>
             </nav>
