@@ -160,7 +160,7 @@ if(isset($_GET['cari'])){
     
                     // yang ini mengambil data pengawai untuk ditampilkan dengan fungsi limit
                     // satu halaman akan ditampilkan paling banyak 10 atau limit 10
-                    $query1   = mysqli_query($koneksi, "select * from user limit $halaman_awal, 1");
+                    $query1   = mysqli_query($koneksi, "select * from user limit $halaman_awal, 10");
     
                     // nomor digunakan untuk penomoran pada kolom no
                     // karena index dimulai dari angka 0 maka perlu ditambah 1
@@ -182,6 +182,23 @@ if(isset($_GET['cari'])){
 
         </table>
  </div>
+ <nav aria-label="Page navigation example">
+                <ul class="inline-flex -space-x-px pb-4 ml-5">
+                    <li class="page-item">
+                        <a class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-red-400 hover:text-white " <?php if($halaman > 1){ echo "href='?halaman=$sebelum'"; } ?>>Previous</a>
+                    </li>
+                    <?php 
+                        for($x = 1; $x <= $total_halaman; $x++){
+                    ?> 
+                    <li class="page-item"><a class="px-4 py-2 ml-1 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white" href="?halaman=<?php echo $x ?>"> <?php echo $x; ?></a></li>
+                    <?php
+                        }
+                    ?> 
+                    <li class="page-item">
+                        <a  class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-red-400 hover:text-white " <?php  if($halaman < $total_halaman) { echo "href='?halaman=$setelah'"; } ?>>Next</a>
+                    </li>
+                </ul>
+            </nav>
  </div>
       
     <!-- End tabel Section -->
